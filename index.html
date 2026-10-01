@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#d77c25" />
+    <meta name="description" content="温的个人主页" />
+    <title>温</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="viewport" aria-label="温的个人主页。画面中的物件可以点击。">
+      <section class="scene" aria-label="温暖卧室里的个人兴趣拼贴">
+        <img
+          class="scene-image"
+          src="./wen-bedroom.png"
+          alt="温暖的橘色卧室里，一只黑白猫睡在床上，墙面挂着音乐海报和电影画面，周围有书、旅行青蛙、唱片机和炒锅。"
+          draggable="false"
+        />
+
+        <div class="ambient ambient-light" aria-hidden="true"></div>
+        <div class="ambient ambient-grain" aria-hidden="true"></div>
+        <div class="dust" aria-hidden="true"></div>
+        <div class="record-glint" aria-hidden="true"></div>
+
+        <button class="hotspot hotspot-cat" data-label="温" aria-label="黑白猫：温"></button>
+        <button
+          class="hotspot hotspot-music"
+          data-label="Lorde · Olivia Rodrigo · Taylor Swift"
+          aria-label="音乐：Lorde、Olivia Rodrigo、Taylor Swift"
+        ></button>
+        <button class="hotspot hotspot-band" data-label="马子狗 · 像狗一样" aria-label="马子狗乐队，像狗一样"></button>
+        <button
+          class="hotspot hotspot-film"
+          data-label="Eternal Sunshine of the Spotless Mind"
+          aria-label="电影：Eternal Sunshine of the Spotless Mind"
+        ></button>
+        <button
+          class="hotspot hotspot-book"
+          data-label="A Tree Grows in Brooklyn"
+          aria-label="书：A Tree Grows in Brooklyn"
+        ></button>
+        <button class="hotspot hotspot-frog" data-label="旅行" aria-label="旅行"></button>
+        <button class="hotspot hotspot-life" data-label="听歌 · 做饭" aria-label="听歌和做饭"></button>
+      </section>
+    </main>
+
+    <div class="caption" role="status" aria-live="polite">
+      <span class="caption-text"></span>
+    </div>
+    <div class="pan-cue" aria-hidden="true">›</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
